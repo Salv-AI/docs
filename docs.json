@@ -2,102 +2,82 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Mint Starter Kit",
+  "homepage": "getting-started/introduction",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#169fff",
+    "light": "#169fff",
+    "dark": "#169fff"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started edit",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "getting-started/introduction",
+              "getting-started/create-first-interview"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Interview Settings",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "settings/overview",
+              "settings/interview-settings",
+              "settings/organization-defaults",
+              "settings/rules-engine"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "ATS Integrations",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "ats-integrations/overview",
+              "settings/ats-settings",
+              "ats-integrations/rules-engine"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Workspace Integrations",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "workspace-integrations/calendar-integration",
+              "workspace-integrations/email-integration"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Sourcing",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "sourcing/overview",
+              "sourcing/rules-of-engagement"
+            ]
+          },
+          {
+            "group": "Templates",
+            "pages": [
+              "templates/overview"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/tenzo_light_blue_full_3.svg",
+    "dark": "/logo/tenzo_light_blue_full_3.svg",
+    "height": 40
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@tenzo.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.tenzo.ai"
     }
   },
   "contextual": {

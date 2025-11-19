@@ -1,0 +1,17 @@
+---
+title: "Overview"
+description: "Overview of ATS integration setup"
+---
+
+## ATS Integrations
+
+Tenzo integrates with all of the top applicant tracking systems in recruting and staffing.
+Integration setup and configuration can be managed via the **Admin** settings portal.
+
+The lifecycle of a linked ATS interview is as follows
+
+1. **Job Sync** Every 5 minutes, Tenzo will sync any new or updated jobs into the Tenzo platform. Interviews will be configured based on Organizaiton Defaults Settings and any matching Rules Engine conditions.
+2. **Applicant Sync** When an applicant applies to a linked job, Tenzo will sync the applicant into the platform.
+3. **Outreach and Interview** If an applicant is in a valid stage or status (configurable in the ATS Settings page) Tenzo will engage the candidate and conduct the configured interview, saving all results as viewable in the Tenzo platform.
+4. **Post-Interview ATS Actions** Once the interview is complete, all interview results will posted back to the ATS. 
+Custom follow up actions dependent on the interview results (status update, stage movement), and the propogation of additional custom extracted information to the ATS may also be configured.

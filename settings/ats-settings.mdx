@@ -1,0 +1,34 @@
+---
+title: "ATS Integration Settings"
+description: "ATS Integration Settings Configuration"
+---
+
+## Manage Your ATS Integration Workflow
+
+From within the **Admin** page, under the **ATS Settings** tab you may configure policies for when to engage applicants, which actions to perform after interviews, and which results back which fields in the ATS.
+
+
+## Available Settings
+
+### Applicant Stage Configuration
+- **Start Stages** Which stages or statuses applicants must be in for outreach to begin. Once applicants are moved out of this stage, outreach will end.
+- **AI Interview Pass / Fail Stage** Which stage to move applicants to when the interview is complete. *No movement will occur if this field is left blank.*
+- **Resume Review Pass / Fail Stage** If an initial resume review of applicants is configured, applicants can be moved to different stages based on the resume review result before the interview is conducted. 
+- **Interview Pass / Completion Rate Thresholds** Thresholds for candidates to take pass / fail actions in the ATS
+- **Disposition After Timeout** Configure if candidates should be dispositioned after inactivity and the desired ATS stage and status updates
+
+### Email and Text Activity Feeds
+- Configure whether inbound and outbound messaging should be propogated as notes to the ATS during outreach.
+
+### Custom Results Fields
+- **Tenzo Job Link Custom Field** A text field on the job where Tenzo will write a link to the job in the Tenzo App
+- **Tenzo Interview Link Custom Field** A custom field on the applicant where Tenzo will post a link to the interview
+- **Tenzo Interview Application Score Custom Field** Where Tenzo will write the score of the interview (on the applicant)
+- **Tenzo Interview Candidate Score Custom Field** Where Tenzo will write the score of the interview (on the candidate). Note: the score written to the candidate will be overwitten if the canddiate interviews for other jobs.
+
+### Feedback Actions Configuration
+- Configre thumbs up / thumbs down in Tenzo to map to specific stage movements in the ATS
+
+### Interview Auto-Activation Configuration
+- For interviews that are automatically generated based on the job description, configure when the interview will become active and begin reaching out to candiadtes
+- Setting a delay can give recruiters the ability to modify the job after creation. Recruiters can manually activate the job at any time.

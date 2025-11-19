@@ -1,0 +1,61 @@
+---
+title: "Rules Engine"
+description: "Automate ATS workflows with rules"
+---
+
+### Rules Engine Overview
+
+Admins may use the Rules Engine to customize interviews based on fields in the ATS. Rules follow the following pattern:
+- **Conditions** Conditions based on specified ATS fields to determine matching jobs
+- **Actions** How Tenzo should configure ATS jobs which match these conditions (eg. *adding to a folder*, *interview generation instructions*, *specific setting configurations*)
+
+### Rules for Generating the Interview Script
+
+There are two distinct options for how the Tenzo interview script is created from an ATS Job.
+
+1. **Script Auto-Generation** Under this flow, a full set of screening questions will be generated based on the job description. 
+    
+    This pathway is recommended for staffing agencies and recruiting teams which manage a large variety of jobs and there is not a standard screen through through which all candidates will be processed.
+    Each screen can will then be automatically to the specific job requirements.
+
+    **Rule Action:** Assign an **AI Generation Template**. Your organization can manage one default generation template standards to follow for inerview generation. 
+    You may also create additional rules to assign more specific generation templates when additional job conditions apply. 
+    Generation template rules *stack* meaning if multiple rules assign generation templates, all templates will be applied.
+
+2. **Pre-Made Interview Template** Under this flow, a premade interview template will be followed exactly for the newly linked job.
+    
+    This pathway is recommnded for teams with long-running jobs for which the interview questions and scoring will remain consistent over time.
+
+    **Rule Action:** Assign a **Job Template** (a premade interview marked as a *Template*) as the action.
+
+
+### Rules for Restricting Job Syncs 
+
+It is easy to roll out the AI interview to only a specific set of jobs from your ATS.
+
+**To restrict the interview to specified roles:**
+
+For all rules which assign either a generation or job template: Specify any restriction conditions based on your ATS fields (eg. Location, Job Title, Industry, etc).
+
+**To ensure all roles in your ATS are linked to an interview:**
+
+You may specify a condtion-free *Fallback Rule* to assign either a Generation or Premade Job template. 
+For all jobs not matching other conflicting interview creation rules, this fallback rule will apply and the interview will be created.
+
+
+### Rules for Background Templates
+
+**Background Templates** are saved documents with supplementary information and rules to help the AI answer candidate questions during the interview and when communicating over SMS or email not available in the job description. 
+
+Your organization has one default background template which will be assigned to all jobs automatically without any special rules needed.
+
+You may however also create rules to assign more specific background templates matching conditions.
+
+Example Use Cases:
+- Different teams in your organization have different polcies for which questions about the role the AI is permitted to answer. You may make a Separate Background info template for each team and a different rule for each.
+- If you would like to provide supplementary information (eg. an office phone number) that is different depending on the office.
+
+
+### Other Rule Actions
+- Assign a Folder
+- Assign Inteview Settings (eg. a specific calendar for follow-up interview)

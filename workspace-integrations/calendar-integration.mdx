@@ -1,0 +1,57 @@
+---
+title: "Calendar Integration"
+description: "Connect your calendar for automated scheduling"
+---
+
+## Calendar Integration Feature
+
+You can connect your Microsoft or Google calendar directories to automatically schedule follow-ups with candidates who pass the AI interview.
+These follow-up events may be customized with Teams, Meet, or Zoom interview links and custom event bodies. 
+
+## Linking your Calendar Directory
+
+To enable the **Follow Up Interviews** feature, which will automatically schedule a follow-up interview with candidates who pass the screen, you must first enable access to your organization's calendar directory.
+The calendar can be connected under **Admin > Office Integrations >  Calendar Integration** by a user in your organization with Google or Microsoft workspace admin permissions.
+
+<Frame caption="Admin > Office Integrations > Calendar Integration">
+<img src="/images/calendar-connect.png" alt="Calendar integration setup screen" />
+</Frame>
+
+Once the calendar integration is complete, you can then assign follow up users to jobs, or simply have a recruiter automatically selected from the hiring team linked to the job in your ATS.
+
+
+
+
+## Enabling Automatic Follow Up Interviews
+
+You may then turn on the *Schedule Follow Up* feature for any job in the *Outro and Scheduling* step of the configure page.
+
+
+<Frame caption="Jobs > Configure Tab > Outro & Scheduling">
+<img src="/images/schedule-step.png" alt="Calendar integration setup screen" />
+</Frame>
+
+When you toggle on the *Schedule Follow-Up Interviews* setting, for all candidates who score above the passing score, Morgan will propose times from the configured User's calendar and then schedule the follow up interview.
+
+You may then customize the following for any job:
+- Total number of follow up interviews scheduled per job (once over the total, Morgan will simply elegantly end future interviews by saying she will be in touch)
+- Passing score threshold (if the candidate scores below the passing score, Morgan will simply elegantly end the interview and say she will be in touch)
+- Add a video meeting link (eg. Teams / Google Meet / Zoom)
+- The meeting duration
+- The meeting event description
+
+
+Default values for these settings may also be configured on an organization level by the Admin.
+
+<Frame caption="Admin > Interview Settings > Schedule Follow-Up">
+<img src="/images/calendar-admin-settings.png" alt="Calendar integration setup screen" />
+</Frame>
+
+
+## Automating Follow-up Recruiters from ATS
+
+If your job was synced from an ATS, and you have the schedule follow up setting **enabled** in your organization default settings, 
+then one of the recruiters from your ATS will be automatically assigned to the job as the designated follow up user.
+
+
+If you haven't selected a specific calendar in your Rules Engine configuration, then one of the recruiters will be auto-assigned from the linked ATS position.
