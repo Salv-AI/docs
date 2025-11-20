@@ -1,0 +1,44 @@
+---
+title: "Script Generation Templates"
+description: "Customize rules and guidelines for generated interview scripts"
+---
+
+## Script Generation Templates
+
+Script Generation Templates allow you to customize how Tenzo's AI generates interview scripts for your recruiters.
+
+Script generation may triggered from the dashboard when creating a new role, re-run to re-generate for an existing role, or, most commonly 
+during an ATS sync if the rules are configured for "Script Generation" (instead of a fully pre-configured interview template).
+
+Providing additional guidelines for the AI during generation can help ensure that the initially generated interviews are as close as possible to what a recruiter would have created manually.
+
+You can provide instructions for:
+- How to structure the call intro and outro
+- An intended order, length, and flow of the screening questions
+- Preferred question types and grading instructions guidelines for the auto-generated questions
+
+<Frame caption="Job > Configure > Script Generation">
+  <img src="/images/templates/script-gen-templates.png" alt="Script Generation Templates" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+## Configuring Script Generation Templates
+
+Your organization comes with a blank **Default** script generation template. 
+This template is automatically added to all jobs and provided as guidelines to the AI during the initial script generation.
+Typically this template is used for standard script generation practices that will apply to all jobs 
+and guidelines you'd like the AI to follow when creating interview scripts.
+
+In addition to the default template, admins may create additional specific templates for specific sets of roles. 
+For example, a customer may want different script styles or expect different common question types for technical roles versus customer-facing roles, and therefore create a template for each type.
+
+## Rules Engine Implementation
+
+To standardize the system of adding additional Script Generation Templates, most admins will create specific rules in the rules engine to add generation templates.
+
+When a script generation templates are added as an action to relevant roles, the interview generation engine will follow the guidelines of all added generation templates
+when generating an interview.
+
+<Frame caption="Job > Configure > Script Generation">
+  <img src="/images/templates/script-gen-templates-rule.png" alt="Script Generation Templates" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
